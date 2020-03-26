@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+        // cible de la transpilation
+        "outDir": "./build",
+        // langage cible de la tranpilation
+        "target": "es5",
+        // définit les types disponible par défaut pour TS
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
+        // permet d'importer des fichiers JS dans un projet TS
+        "allowJs": true,
+        // permet de vérifier si un élement js est cohérent avec le type du TS dans lequel on l'utilise
+        "checkJs": true,
+        // Ignorez la vérification de type des fichiers de déclaration de bibliothèque par défaut.
+        "skipLibCheck": false,
+        // interdit d'écrire "any" en type
+        "noImplicitAny": true,
+        // passe les fichiers en mode strict
+        "strict": true,
+        // force le respect de la syntaxe d'un nom de fichier extérieur au projet
+        "forceConsistentCasingInFileNames": true,
+        // permet de ne pas gérer les fichiers js contenant du code source
+        "noEmit": true,
+        // permet l'import d'ES modules
+        "esModuleInterop": true,
+        // détermine le javascript utilisé
+        "module": "esnext",
+    },
+    // path des fichiers à chercher
+    "include": [
+        "src/**/*"
+    ],
+    // path des fichiers à ignorer
+    "exclude": [
+        "node_modules",
+        "webpack.*.js"
+    ]
+}

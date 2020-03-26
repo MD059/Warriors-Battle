@@ -1,0 +1,10 @@
+// différents modules babel afin de transpiler en es5
+{
+    "presets": [],
+    "plugins": [
+        [
+            "@babel/plugin-proposal-class-properties",
+            "@label/plugin-transform-classes"
+        ]
+    ]
+}
