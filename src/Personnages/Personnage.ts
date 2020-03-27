@@ -1,27 +1,30 @@
 import { Combat } from '../Partie/Combat';
+import { Wizard } from './Wizard';
 
 
 export class Personnage extends Combat {
 
-    private _nom: string;
+    private _name: string;
     private _atk: number;
     private _def: number;
     private _pv: number;
 
+
     constructor(nom: string) {
         super();
-        this._nom = nom;
+        this._name = nom;
         this._atk = 0;
         this._def = 0;
         this._pv = 0;
     }
 
-    public get nom(): string {
-        return this._nom;
+
+    public get name(): string {
+        return this._name;
     }
 
-    public set nom(nom: string) {
-        this._nom = nom;
+    public set name(nom: string) {
+        this._name = nom;
     }
 
     public get atk(): number {
